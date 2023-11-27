@@ -1,26 +1,12 @@
 import useSWR from 'swr';
 import useGeolocation from './useGeolocation';
+import { WeatherData } from '@/types';
 
 interface Coordinates {
   latitude: number | null;
   longitude: number | null;
 }
 
-interface WeatherData {
-  // Define the structure of the weather data
-  // You can check the API documentation for the complete structure
-  // https://www.weatherapi.com/docs/
-  location: {
-    name: string;
-  };
-  current: {
-    temp_c: number;
-    condition: {
-      text: string;
-      icon: string;
-    };
-  };
-}
 
 const useWeather = (): {
   data: WeatherData | undefined;
