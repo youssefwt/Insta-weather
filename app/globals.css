@@ -9,7 +9,7 @@
   
   /* Track */
   ::-webkit-scrollbar-track {
-    background: rgb(226, 225, 225);
+    background: rgb(212, 211, 211);
   }
   
   /* Handle */
@@ -28,13 +28,28 @@
     html {
         @apply text-white
     }
+    body{
+        background-color: black;
+    }
 }
 
 @layer components{
     .switch-button{
-        @apply h-11 w-16 font-semibold text-lg
+        @apply h-11 w-16 font-semibold text-xl
     }
     .checked-switch{
-        @apply bg-neutral-300/70 border-l-2 border-white
+        @apply bg-neutral-100/50 border-l-2 border-white 
     }
+}
+
+@layer utilities{
+    .bg-cover{
+        background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("/bg.jpg");
+    
+}
+        /* background: url("/bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover; */
+    
 }

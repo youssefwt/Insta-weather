@@ -15,8 +15,8 @@ const Tabs = ({ tabs, activeTab, setActiveTab }: PropTypes) => {
                 {tabs.map(tab => (
                     <div
                         key={tab}
-                        className={`cursor-pointer p-4 font-bold text-neutral-100
-                        ${activeTab === tab ? 'border-b-2 border-white font-bold text-white' : ''}`
+                        className={`cursor-pointer p-4 font-bold 
+                        ${activeTab === tab ? 'border-b-2 border-white font-bold text-white' : 'text-neutral-100/70'}`
                         }
                         onClick={() => setActiveTab(tab)}
                     >
