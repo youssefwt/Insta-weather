@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <main className='container mx-auto h-screen flex items-center justify-center'>
-      <section className='h-5/6 w-4/5 bg-cyan-200 px-20 py-10'>
+      <section className='h-5/6 w-4/5 bg-cyan-200 px-1 md:px-20 py-10'>
         <Header unit={unit} setUnit={setUnit} />
         <CurrentWeather condition={data?.current.condition} />
       </section>

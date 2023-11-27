@@ -8,7 +8,7 @@ type PropTypes = {
 
 const CurrentWeather = ({ condition }: PropTypes) => {
     return (
-        <article className='flex flex-col md:flex-row justify-between items-center'>
+        <article className='flex flex-col gap-6 md:flex-row justify-between items-center'>
             {/* condition */}
             <div>
                 <h2 className='font-bold text-5xl'>New Cairo</h2>
