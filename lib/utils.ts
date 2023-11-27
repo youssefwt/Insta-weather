@@ -31,3 +31,9 @@ export function extractHour(dateString:string) {
 
     return `${formattedHour}:${formattedMinute}`;
 }
+
+export function formatDate(dateInput:string,options:{}){
+const date=new Date(dateInput)
+    const formattedDate = new Intl.DateTimeFormat('en-US', options).format(date);
+    return formattedDate
+}
