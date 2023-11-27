@@ -2,3 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+    html {
+        @apply text-white
+    }
+}
+
+@layer components{
+    .switch-button{
+        @apply h-11 w-16 font-semibold text-lg
+    }
+    .checked-switch{
+        @apply bg-neutral-300/70 border-l-2 border-white
+    }
+}
