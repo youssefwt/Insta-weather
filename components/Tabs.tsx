@@ -8,10 +8,9 @@ type PropTypes = {
     forecast: Forecastday[] | undefined
 }
 
-const Tabs = ({ tabs, activeTab, setActiveTab, forecast }: PropTypes) => {
+const Tabs = ({ tabs, activeTab, setActiveTab }: PropTypes) => {
     return (
         <>
-            {/* tabs */}
             <div className="flex border-b">
                 {tabs.map(tab => (
                     <div
@@ -24,10 +23,6 @@ const Tabs = ({ tabs, activeTab, setActiveTab, forecast }: PropTypes) => {
                         {tab}
                     </div>
                 ))}
-            </div>
-            {/* content */}
-            <div className='flex flex-wrap overflow-y-auto'>
-
             </div>
         </>
     )

@@ -13,12 +13,12 @@ export default function Home() {
 
 
   return (
-    <main className='container mx-auto h-screen flex items-center justify-center'>
-      <section className='h-5/6 w-4/5 bg-cyan-200 px-1 md:px-20 py-10 flex flex-col justify-between'>
+    <main className='container mx-auto h-screen flex items-start justify-center'>
+      <section className='w-3/4 bg-cyan-200 my-auto flex flex-col justify-between'>
         <Header unit={unit} setUnit={setUnit} />
-        <div className="lg:h-5/6 flex flex-col gap-16">
+        <div className="lg:h-5/6 flex flex-col gap-9 lg:gap-16">
           <TodayWeather current={data?.current} unit={unit} dayForecast={data?.forecast.forecastday[0].day} location={data?.location} />
-          <Forecast forecast={data?.forecast.forecastday} />
+          <Forecast forecast={data?.forecast.forecastday} unit={unit} />
         </div>
       </section>
     </main>
