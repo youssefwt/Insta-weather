@@ -7,7 +7,7 @@ type PropTypes = {
 
 const Header = ({ unit, setUnit }: PropTypes) => {
     return (
-        <header className='flex flex-col md:flex-row justify-between items-center mb-20'>
+        <header className='flex flex-col md:flex-row justify-between items-center'>
             {/* TITLE */}
             <h1 className='font-bold text-3xl'>INSTAWEATHER</h1>
             {/* SWITCH */}
