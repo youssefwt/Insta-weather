@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# InstaWeather
+
+InstaWeather is a Next.js based weather application designed to deliver precise and user-friendly weather updates. It's tailored for users who seek a quick glance at the current weather conditions along with detailed forecasts.
+
+## Features
+
+1. **Current Temperature & Summary**: Displays the current temperature along with a short summary of the current weather conditions.
+
+2. **Today's Highs & Lows**: Shows the maximum and minimum temperatures for the day.
+
+3. **Today's Forecast Summary**: Provides a text summary of the weather forecast for the day.
+
+4. **Date Display**: Shows today's date for easy reference.
+
+5. **Celsius/Fahrenheit Toggle**: Users can switch between Celsius and Fahrenheit temperature units with a convenient toggle button.
+
+6. **Hourly Forecast**: Displays the weather forecast for the upcoming 24 hours, updated hourly.
+
+7. **14-Day Forecast**: Offers a 14-day weather forecast, including today, with the day and expected high temperatures (e.g., TUE, 85°F).
+
+8. **City Name Display**: Shows the name of the city (e.g., New Cairo) based on the user's location.
+
+9. **Geolocation Support**: Utilizes the browser's Geolocation API to accurately locate the user for localized weather updates. Users will be prompted by the browser to allow location access for the app to function correctly.
 
 ## Getting Started
 
-First, run the development server:
+To get started with InstaWeather:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. **Fork or Clone the Repository**:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+   ```
+   git clone https://github.com/your-username/instaweather.git
+   ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. **Install Dependencies**:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   Inside the cloned directory, run:
 
-## Learn More
+   ```
+   npm install
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+3. **Run the Application**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   Start the development server:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```
+   npm run dev
+   ```
 
-## Deploy on Vercel
+   The application will be available at `http://localhost:3000`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. **Location Access**:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+   On the first run, your browser will ask for location permissions. Please allow this to enable accurate weather updates.
+
+5. **Enjoy the Weather Updates**!
+
+## Contributing
+
+Contributions to InstaWeather are always welcome, whether it be improvements to the documentation or new functionalities. Please feel free to fork the repository and submit pull requests.
+
+## License
+
+InstaWeather is released under the [MIT License](LICENSE.md).
+
+## Contact
+
+For any queries or suggestions, please open an issue on the GitHub repository or contact the maintainers directly.
+
+---
+
+InstaWeather: Your go-to weather app for up-to-date and precise weather information!
