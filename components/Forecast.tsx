@@ -3,10 +3,12 @@ import Tabs from './Tabs';
 import { Forecastday } from '@/types';
 import { extractHour, formatDate, isSameHour } from '@/lib/utils';
 import Image from 'next/image';
+import ForecastSkeleton from './ForecastSkeleton';
 
 type PropTypes = {
     forecast: Forecastday[] | undefined
     unit: "c" | "f"
+    isLoading: boolean
 }
 
 const tabs = ["Hourly", "Daily"]
@@ -17,7 +19,7 @@ const UnitForecast = ({ icon, temp, children }: { icon: string, temp: number, ch
         <p className='mb-10 text-2xl'>{temp}&deg;</p>
     </>)
 }
-const Forecast = ({ forecast, unit }: PropTypes) => {
+const Forecast = ({ forecast, unit, isLoading }: PropTypes) => {
     const [activeTab, setActiveTab] = useState(tabs[0]);
     const HourlyForecast = () => {
         return (
@@ -64,7 +66,9 @@ const Forecast = ({ forecast, unit }: PropTypes) => {
             {/* content */}
             <div className='flex overflow-x-auto overflow-y-clip gap-10 w-full'>
                 {
-                    activeTab === "Hourly" ? <HourlyForecast /> : <DailyForecast />
+                    isLoading ? Array.from({ length: 14 }, (_, index) => index).map((_, i) => (<ForecastSkeleton key={i} />))
+                        :
+                        activeTab === "Hourly" ? <HourlyForecast /> : <DailyForecast />
                 }
             </div>
         </div>

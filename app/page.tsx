@@ -21,8 +21,11 @@ export default function Home() {
         <div className="lg:h-5/6 flex flex-col gap-9 lg:gap-16">
           {isLoading || isValidating ?
             <TodayWetherSkeleton /> :
-            <TodayWeather current={data?.current} unit={unit} dayForecast={data?.forecast.forecastday[0].day} location={data?.location} />}
-          <Forecast forecast={data?.forecast.forecastday} unit={unit} />
+            <TodayWeather current={data?.current} unit={unit} dayForecast={data?.forecast.forecastday[0].day} location={data?.location} />
+          }
+
+          <Forecast forecast={data?.forecast.forecastday} unit={unit} isLoading={isLoading || isValidating} />
+
         </div>
       </section>
     </main>
