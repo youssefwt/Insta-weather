@@ -27,7 +27,7 @@ const Forecast = ({ forecast, unit }: PropTypes) => {
                         <UnitForecast
                             temp={unit === "c" ? hour.temp_c : hour.temp_f}
                             icon={hour.condition.icon.replace(/^\/\//, "https://")}>
-                            <p className='text-xl'>{isSameHour(hour.time) ? "now" : extractHour(hour.time)}</p>
+                            <p className='text-xl'>{isSameHour(hour.time) ? "Now" : extractHour(hour.time)}</p>
                         </UnitForecast>
                     </div>)
                 })}
