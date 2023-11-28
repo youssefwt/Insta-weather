@@ -11,7 +11,6 @@ export default function Home() {
   const [unit, setUnit] = useState<"c" | "f">("c")
   const { data, error, isLoading, isValidating } = useWeather();
 
-
   return (
     <main className='container mx-auto h-screen flex items-start justify-center bg-cover'>
       <section className='w-3/4 my-auto flex flex-col justify-between'>

@@ -25,7 +25,9 @@ const TodayWeather = ({ unit, current, dayForecast: forecast, location }: PropTy
         <article className='flex flex-col gap-6 lg:flex-row justify-between items-center lg:h-[230px]'>
             {/* condition */}
             <div className='flex flex-col justify-between h-full text-center lg:text-start'>
-                <h2 className='font-bold text-5xl lg:text-7xl'>{location?.name}</h2>
+                {location?.name !== "Null" ?
+                    <h2 className='font-bold text-5xl lg:text-7xl'>{location?.name}</h2>
+                    : <h2 className='font-medium text-xl lg:text-2xl text-red-500'>Location unavailable, allow location and try again</h2>}
                 <p className='font-semibold text-lg '>{formattedDate}</p>
                 <Image className='w-24 mx-auto lg:mx-0' src={current?.condition.icon.replace(/^\/\//, "https://") || ""} alt='condition icon' width={64} height={64} />
                 <p className='font-bold text-2xl'>{current?.condition.text}</p>
