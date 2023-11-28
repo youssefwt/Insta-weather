@@ -10,7 +10,6 @@ import TodayWetherSkeleton from "@/components/TodayWetherSkeleton";
 export default function Home() {
   const [unit, setUnit] = useState<"c" | "f">("c")
   const { data, error, isLoading, isValidating } = useWeather();
-  console.log(data, error, isLoading, isValidating)
 
 
   return (
