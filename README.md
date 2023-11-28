@@ -44,9 +44,6 @@ To get started with InstaWeather:
 
    NEXT_PUBLIC_API_KEY=API-KEY
 
-   ```
-   npm run dev
-   ```
 
 4. **Run the Application**:
 
