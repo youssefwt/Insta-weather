@@ -29,7 +29,7 @@ To get started with InstaWeather:
 1. **Fork or Clone the Repository**:
 
    ```
-   git clone https://github.com/your-username/instaweather.git
+   git clone https://github.com/youssefwt/insta-weather.git
    ```
 
 2. **Install Dependencies**:
