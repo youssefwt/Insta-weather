@@ -40,7 +40,15 @@ To get started with InstaWeather:
    npm install
    ```
 
-3. **Run the Application**:
+3. **Add env.local file in root folder**:
+
+   NEXT_PUBLIC_API_KEY=API-KEY
+
+   ```
+   npm run dev
+   ```
+
+4. **Run the Application**:
 
    Start the development server:
 
@@ -50,11 +58,11 @@ To get started with InstaWeather:
 
    The application will be available at `http://localhost:3000`.
 
-4. **Location Access**:
+5. **Location Access**:
 
    On the first run, your browser will ask for location permissions. Please allow this to enable accurate weather updates.
 
-5. **Enjoy the Weather Updates**!
+6. **Enjoy the Weather Updates**!
 
 ## Contributing
 
