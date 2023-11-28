@@ -19,7 +19,7 @@ const useWeather = (): {
   const fetcher = (url: string) => fetch(url).then((res) => res.json());
   // Fetch weather data using SWR
   const { data, error: weatherError,isLoading,isValidating } = useSWR<WeatherData>(
-    coordinates ? `http://api.weatherapi.com/v1/forecast.json?key=${process.env.NEXT_PUBLIC_API_KEY}&days=14&q=${coordinates.latitude},${coordinates.longitude}` : null,fetcher
+    coordinates ? `https://api.weatherapi.com/v1/forecast.json?key=${process.env.NEXT_PUBLIC_API_KEY}&days=14&q=${coordinates.latitude},${coordinates.longitude}` : null,fetcher
   );
 
   return {
